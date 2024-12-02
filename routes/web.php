@@ -1,9 +1,10 @@
 <?php
 
+use App\Models\User;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Redis;
 use Illuminate\Support\Facades\Route;
-use App\Models\User;
+use Illuminate\Support\Facades\Session;
 
 Route::get('/', function () {
     phpinfo();
@@ -51,10 +52,8 @@ Route::get('/cache', function () {
 });
 
 Route::get('/session', function () {
-
-    session(['test_key' => 'test_value']);
+    session(['test-key' => 'Redis is working!']);
     return 'Session set!';
-
 });
 
 

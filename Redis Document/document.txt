@@ -1,5 +1,3 @@
-https://chatgpt.com/share/674b526b-b61c-8003-8d89-38dcb5686805
-
 Step 1: Install Redis on Windows
 Download Redis for Windows
 https://github.com/tporadowski/redis/releases
@@ -102,4 +100,9 @@ public function logout(Request $request)
 
     return redirect('/');
 }
+
+Resouce:
+https://www.youtube.com/watch?v=nB7zi88DB1Y
+https://www.youtube.com/watch?v=RQYuyHNLPTQ&t=14s
+https://chatgpt.com/share/674b526b-b61c-8003-8d89-38dcb5686805
 
