@@ -45,7 +45,6 @@ Route::get('/database', function () {
 });
 
 Route::get('/cache', function () {
-
     Cache::store('redis')->put('test-key', 'Redis is working!', 600);
     Cache::store('redis')->get('test-key');
 
